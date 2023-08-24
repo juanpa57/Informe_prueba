@@ -1,0 +1,76 @@
+Clinica cardio infantil.
+
+
+-PERFIL CONSUMO DIARIO ULTIMOS 3 MESES
+
+PONER EL CSUM EN CONSUMO ENERGIA, CONSUMO DE AGUA
+POR CADA MES CUANTAS HORA FUNCIONAMIENTO LLEVA
+
+-PERFIL DE DEMANDA
+
+-MAPA DE CALOR 
+
+-PERFIL DE CONSUMO DIURNO Y NOCTURNO.  -->POR BOXPLOT
+
+Solicitud de yonathan:
+-Consumo agua y luz mensual para el periodo trimestre. Comparado con línea base.
+-Box plot consumo nocturno y diurno de agua.
+-Mapa calor, hora y día semana consumo de agua.
+-Cusum Consumo de agua y electricidad.
+-Horas de operación de las bombas de calor.   ///COMO SACAR ESTA VARIABLE
+-Consumo específico de energía; kWh/m3
+-horas nocturnos: 10 pm a 5 am
+
+datos se tienen de 
+---diciembre a febrero.
+
+-----------
+variables Energía 
+
+KWh-mes
+consumo-electricidad-mes  - ok
+
+kWh
+energia-activa-hora-hora   -ok
+
+
+variables Agua:
+m3
+consumo-agua-dia  -ok
+
+m3
+consumo-agua-mes  -ok
+
+KWht
+energia-termica-hora-hora  -ok
+
+KWh
+energia-termica-mes  -ok
+
+linea base
+diciembre 2022 a febrero 2023.
+
+
+fundacion-cardio-infantil
+-----------
+
+    "consumo-electricidad-dia",
+    "consumo-electricidad-mes",
+    "energia-activa-hora-hora",
+    "consumo-agua-dia",
+    "consumo-agua-mes",
+    "energia-termica-hora-hora",
+    "energia-termica-mes",
+
+
+dr_vars_filtered = df_vars.filter(items=WHITELISTED_VAR_LABELS)
+
+
+
+13. Crear el informe en PDF, correr el comando "jb build main/ --builder pdfhtml"
+------------
+
+
+
+
+
